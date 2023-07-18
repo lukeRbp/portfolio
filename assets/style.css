@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --corprimaria: #000000;
+    --corsecundaria: #f6f6f6;
+    --corterciaria: #00ced1;
+    --corhover: #272727;
+
+    --fonteprincipal: 'Krona One', sans-serif;
+    --fontesecundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabeca{
+    padding: 1% 0% 0% 10%;
+}
+.cabeca-menu{
+    display: flex;
+    gap: 60px;
+}
+.cabeca-link{
+    font-family: var(--fontesecundaria);
+    font-weight: 600;
+    font-size: 1,1rem;
+    color: var(--corterciaria);
+    text-decoration: none;
+}
+
+.cabeca-link:hover{
+    color: var(--corsecundaria);
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--corprimaria);
+    color: var(--corsecundaria);
+}
+
+.apresentacao {
+    padding: 3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao-conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 2,2rem;
+    font-family: var(--fonteprincipal);
+}
+.titulo {
+    color: var(--corterciaria);
+}
+
+.apresentacao-conteudo-texto {
+    font-size: 1rem;
+    font-family: var(--fontesecundaria);
+    justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+}
+.apresentacao-de-links{
+    font-family: var(--fonteprincipal);
+    font-weight: 400;
+    font-size: 0,75rem;
+}
+.apresentacao-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+    border: 2px solid var(--corterciaria);
+    text-align: center;
+    border-radius: 40px;
+    font-size: 1,125rem;
+    font-weight: 600;
+    padding: 17px 20px;
+    text-decoration: none;
+    color: var(--corsecundaria);
+    font-family: var(--fontesecundaria);
+}
+.apresentacao-links:hover {
+    background-color: var(--corhover);
+
+}
+
+.imagem-principal{
+    border: 2px solid var(--corterciaria);
+    display: flex;
+    
+}
+.rodape{
+    color:var(--corprimaria);
+    background-color: var(--corterciaria);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fontesecundaria);
+    font-size: 1,5;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px) {
+    .cabeca {
+        padding: 10%;
+    }
+
+    .cabeca-menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao-conteudo{
+        width: auto;
+    }
+
+}
